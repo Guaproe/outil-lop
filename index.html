@@ -422,12 +422,13 @@
 <div class="container">
     <header>
         <h1>Outils LOP</h1>
-        <p>Calcul de distance et de trajet</p>
+        <p>Calcul de distance, trajet et heure d'attaque</p>
     </header>
 
     <div class="tabs">
-        <div class="tab active" onclick="switchTab('distance')">Distance</div>
-        <div class="tab" onclick="switchTab('trajet')">Trajet</div>
+        <div class="tab active" data-tab="distance" onclick="switchTab('distance')">Distance</div>
+        <div class="tab" data-tab="trajet" onclick="switchTab('trajet')">Trajet</div>
+        <div class="tab" data-tab="hopital" onclick="switchTab('hopital')">Hôpital</div>
     </div>
 
     <div class="panel active" id="panel-distance">
@@ -535,6 +536,56 @@
         </div>
     </div>
 
+    <div class="panel" id="panel-hopital">
+        <div class="card">
+            <div class="card-label"><span class="dot dot-amber"></span>Heure observée</div>
+            <div class="input-row">
+                <div class="field">
+                    <label>Heure</label>
+                    <input type="number" id="hospital-now-h" placeholder="16" min="0" max="23">
+                </div>
+                <span class="colon">:</span>
+                <div class="field">
+                    <label>Min</label>
+                    <input type="number" id="hospital-now-m" placeholder="21" min="0" max="59">
+                </div>
+                <span class="colon">:</span>
+                <div class="field">
+                    <label>Sec</label>
+                    <input type="number" id="hospital-now-s" placeholder="30" min="0" max="59">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-label"><span class="dot dot-red"></span>Chrono hôpital restant</div>
+            <div class="input-row">
+                <div class="field">
+                    <label>Heure</label>
+                    <input type="number" id="hospital-rem-h" placeholder="23" min="0" max="24">
+                </div>
+                <span class="colon">:</span>
+                <div class="field">
+                    <label>Min</label>
+                    <input type="number" id="hospital-rem-m" placeholder="59" min="0" max="59">
+                </div>
+                <span class="colon">:</span>
+                <div class="field">
+                    <label>Sec</label>
+                    <input type="number" id="hospital-rem-s" placeholder="50" min="0" max="59">
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-calc" onclick="calculateHospitalAttackTime()">Calculer l'heure d'attaque</button>
+
+        <div class="result" id="hospital-result">
+            <div class="result-title">Heure exacte de l'attaque</div>
+            <div class="result-distance" id="hospital-attack-time">—</div>
+            <div class="result-detail" id="hospital-detail"></div>
+        </div>
+    </div>
+
     <footer>By Kurama</footer>
 </div>
 
@@ -557,7 +608,7 @@
     function switchTab(name) {
         document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-        document.querySelector('.tab:nth-child(' + (name === 'distance' ? 1 : 2) + ')').classList.add('active');
+        document.querySelector('.tab[data-tab="' + name + '"]').classList.add('active');
         document.getElementById('panel-' + name).classList.add('active');
     }
 
@@ -694,6 +745,51 @@
         return pad2(h % 24) + ':' + pad2(m) + ':' + pad2(s);
     }
 
+    function isValidTimePart(value, max) {
+        return Number.isInteger(value) && value >= 0 && value <= max;
+    }
+
+    function calculateHospitalAttackTime() {
+        const nowH = parseInt(document.getElementById('hospital-now-h').value, 10);
+        const nowM = parseInt(document.getElementById('hospital-now-m').value, 10);
+        const nowS = parseInt(document.getElementById('hospital-now-s').value, 10);
+        const remH = parseInt(document.getElementById('hospital-rem-h').value, 10);
+        const remM = parseInt(document.getElementById('hospital-rem-m').value, 10);
+        const remS = parseInt(document.getElementById('hospital-rem-s').value, 10);
+        const hospitalDuration = 24 * 3600;
+
+        if (
+            !isValidTimePart(nowH, 23) ||
+            !isValidTimePart(nowM, 59) ||
+            !isValidTimePart(nowS, 59) ||
+            !isValidTimePart(remH, 24) ||
+            !isValidTimePart(remM, 59) ||
+            !isValidTimePart(remS, 59)
+        ) {
+            return;
+        }
+
+        const remainingSec = remH * 3600 + remM * 60 + remS;
+        if (remainingSec > hospitalDuration) return;
+
+        const nowTotalSec = nowH * 3600 + nowM * 60 + nowS;
+        const elapsedSec = hospitalDuration - remainingSec;
+        const attackTotalSec = nowTotalSec - elapsedSec;
+        const normalizedAttackSec = ((attackTotalSec % hospitalDuration) + hospitalDuration) % hospitalDuration;
+        const attackH = Math.floor(normalizedAttackSec / 3600);
+        const attackM = Math.floor((normalizedAttackSec % 3600) / 60);
+        const attackS = normalizedAttackSec % 60;
+        const crossedPreviousDay = attackTotalSec < 0;
+
+        document.getElementById('hospital-attack-time').textContent = formatTime(attackH, attackM, attackS);
+        document.getElementById('hospital-detail').innerHTML =
+            'Observation à <strong>' + formatTime(nowH, nowM, nowS) + '</strong>' +
+            ' · Temps écoulé dans l\'hôpital <strong>' + formatDuration(elapsedSec) + '</strong>' +
+            (crossedPreviousDay ? ' · Attaque survenue <strong>la veille</strong>' : ' · Attaque survenue <strong>le même jour</strong>');
+
+        document.getElementById('hospital-result').classList.add('visible');
+    }
+
     function calculateTrip() {
         const depH = parseInt(document.getElementById('dep-h').value);
         const depM = parseInt(document.getElementById('dep-m').value);
@@ -738,6 +834,17 @@
             if (e.key === 'Enter') calculateTrip();
         });
     });
+
+    document.querySelectorAll('#panel-hopital input').forEach(input => {
+        input.addEventListener('keydown', e => {
+            if (e.key === 'Enter') calculateHospitalAttackTime();
+        });
+    });
+
+    const now = new Date();
+    document.getElementById('hospital-now-h').value = now.getHours();
+    document.getElementById('hospital-now-m').value = String(now.getMinutes()).padStart(2, '0');
+    document.getElementById('hospital-now-s').value = String(now.getSeconds()).padStart(2, '0');
 </script>
 
 </body>
