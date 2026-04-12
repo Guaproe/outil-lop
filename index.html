@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LOP — Outils</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;600;700&family=DM+Sans:wght@400;500;600&display=swap"
+        rel="stylesheet">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
         :root {
             --bg: #0e1117;
@@ -47,7 +56,7 @@
             left: -20%;
             width: 80%;
             height: 80%;
-            background: radial-gradient(ellipse, rgba(232,168,50,0.04) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(232, 168, 50, 0.04) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -58,7 +67,7 @@
             right: -10%;
             width: 60%;
             height: 60%;
-            background: radial-gradient(ellipse, rgba(63,185,80,0.03) 0%, transparent 70%);
+            background: radial-gradient(ellipse, rgba(63, 185, 80, 0.03) 0%, transparent 70%);
             pointer-events: none;
         }
 
@@ -69,8 +78,15 @@
         }
 
         @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         header {
@@ -117,18 +133,23 @@
         }
 
         .tab:hover {
-            border-color: rgba(232,168,50,0.3);
+            border-color: rgba(232, 168, 50, 0.3);
             color: var(--text);
         }
 
         .tab.active {
-            background: linear-gradient(135deg, rgba(232,168,50,0.12), rgba(232,168,50,0.05));
+            background: linear-gradient(135deg, rgba(232, 168, 50, 0.12), rgba(232, 168, 50, 0.05));
             border-color: var(--accent);
             color: var(--accent);
         }
 
-        .panel { display: none; }
-        .panel.active { display: block; }
+        .panel {
+            display: none;
+        }
+
+        .panel.active {
+            display: block;
+        }
 
         .card {
             background: var(--card);
@@ -140,7 +161,7 @@
         }
 
         .card:hover {
-            border-color: rgba(232,168,50,0.3);
+            border-color: rgba(232, 168, 50, 0.3);
             box-shadow: 0 0 24px var(--accent-glow);
         }
 
@@ -164,10 +185,21 @@
             display: inline-block;
         }
 
-        .dot-amber { background: var(--accent); }
-        .dot-blue { background: var(--blue); }
-        .dot-green { background: var(--success); }
-        .dot-red { background: var(--red); }
+        .dot-amber {
+            background: var(--accent);
+        }
+
+        .dot-blue {
+            background: var(--blue);
+        }
+
+        .dot-green {
+            background: var(--success);
+        }
+
+        .dot-red {
+            background: var(--red);
+        }
 
         .input-row {
             display: flex;
@@ -188,7 +220,8 @@
             font-weight: 500;
         }
 
-        .field input, .field select {
+        .field input,
+        .field select {
             background: var(--input-bg);
             border: 1px solid var(--border);
             border-radius: 8px;
@@ -204,7 +237,8 @@
             -webkit-appearance: none;
         }
 
-        .field input:focus, .field select:focus {
+        .field input:focus,
+        .field select:focus {
             border-color: var(--accent);
             box-shadow: 0 0 0 3px var(--accent-glow);
         }
@@ -279,7 +313,7 @@
 
         .btn-calc:hover {
             transform: translateY(-1px);
-            box-shadow: 0 6px 28px rgba(232,168,50,0.3);
+            box-shadow: 0 6px 28px rgba(232, 168, 50, 0.3);
         }
 
         .btn-calc:active {
@@ -303,7 +337,7 @@
             opacity: 1;
             transform: translateY(0);
             pointer-events: auto;
-            border-color: rgba(63,185,80,0.35);
+            border-color: rgba(63, 185, 80, 0.35);
             box-shadow: 0 0 28px var(--success-glow);
         }
 
@@ -384,10 +418,21 @@
             font-size: 1.25rem;
         }
 
-        .trip-block-value.green { color: var(--success); }
-        .trip-block-value.amber { color: var(--accent); }
-        .trip-block-value.blue { color: var(--blue); }
-        .trip-block-value.red { color: var(--red); }
+        .trip-block-value.green {
+            color: var(--success);
+        }
+
+        .trip-block-value.amber {
+            color: var(--accent);
+        }
+
+        .trip-block-value.blue {
+            color: var(--blue);
+        }
+
+        .trip-block-value.red {
+            color: var(--red);
+        }
 
         .trip-summary {
             margin-top: 1rem;
@@ -410,442 +455,454 @@
         }
 
         @media (max-width: 480px) {
-            .card { padding: 1.25rem; }
-            .result-distance { font-size: 1.8rem; }
-            .trip-grid { grid-template-columns: 1fr; }
-            .trip-block-value { font-size: 1.05rem; }
+            .card {
+                padding: 1.25rem;
+            }
+
+            .result-distance {
+                font-size: 1.8rem;
+            }
+
+            .trip-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .trip-block-value {
+                font-size: 1.05rem;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="container">
-    <header>
-        <h1>Outils LOP</h1>
-        <p>Calcul de distance, trajet et heure d'attaque</p>
-    </header>
+    <div class="container">
+        <header>
+            <h1>Outils LOP</h1>
+            <p>Calcul de distance, trajet et heure d'attaque</p>
+        </header>
 
-    <div class="tabs">
-        <div class="tab active" data-tab="distance" onclick="switchTab('distance')">Distance</div>
-        <div class="tab" data-tab="trajet" onclick="switchTab('trajet')">Trajet</div>
-        <div class="tab" data-tab="hopital" onclick="switchTab('hopital')">Hôpital</div>
+        <div class="tabs">
+            <div class="tab active" data-tab="distance" onclick="switchTab('distance')">Distance</div>
+            <div class="tab" data-tab="trajet" onclick="switchTab('trajet')">Trajet</div>
+            <div class="tab" data-tab="hopital" onclick="switchTab('hopital')">Hôpital</div>
+        </div>
+
+        <div class="panel active" id="panel-distance">
+            <div class="card">
+                <div class="card-label"><span class="dot dot-amber"></span>Village A</div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>X</label>
+                        <input type="number" id="x1" placeholder="32">
+                    </div>
+                    <span class="slash">/</span>
+                    <div class="field">
+                        <label>Y</label>
+                        <input type="number" id="y1" placeholder="4">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label"><span class="dot dot-blue"></span>Village B</div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>X</label>
+                        <input type="number" id="x2" placeholder="30">
+                    </div>
+                    <span class="slash">/</span>
+                    <div class="field">
+                        <label>Y</label>
+                        <input type="number" id="y2" placeholder="6">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-calc" onclick="calculate()">Calculer la distance</button>
+
+            <div class="result" id="result">
+                <div class="result-title">Distance</div>
+                <div class="result-distance" id="distanceValue">— <span>km</span></div>
+                <div class="result-detail" id="detail"></div>
+                <div class="visual-map">
+                    <canvas id="mapCanvas" width="320" height="180"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-trajet">
+            <div class="card">
+                <div class="card-label"><span class="dot dot-amber"></span>Heure de départ</div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>Heure</label>
+                        <input type="number" id="dep-h" placeholder="16" min="0" max="23">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Min</label>
+                        <input type="number" id="dep-m" placeholder="00" min="0" max="59">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Sec</label>
+                        <input type="number" id="dep-s" placeholder="10" min="0" max="59">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label"><span class="dot dot-blue"></span>Base navale</div>
+                <div class="field">
+                    <label>Niveau</label>
+                    <select id="naval-level">
+                        <option value="" disabled selected>Choisir le niveau</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label"><span class="dot dot-green"></span>Distance</div>
+                <div class="field">
+                    <label>Km</label>
+                    <input type="number" id="trip-dist" placeholder="2" min="1">
+                </div>
+            </div>
+
+            <div class="checkbox-row">
+                <input type="checkbox" id="speed-bonus">
+                <label for="speed-bonus">Bonus de vitesse (×2)</label>
+            </div>
+
+            <button class="btn-calc" onclick="calculateTrip()">Calculer le trajet</button>
+
+            <div class="result" id="trip-result">
+                <div class="result-title">Résultat du trajet</div>
+                <div class="trip-grid">
+                    <div class="trip-block">
+                        <div class="trip-block-label">Durée aller</div>
+                        <div class="trip-block-value green" id="trip-duration">—</div>
+                    </div>
+                    <div class="trip-block">
+                        <div class="trip-block-label">Arrivée cible</div>
+                        <div class="trip-block-value blue" id="trip-arrival">—</div>
+                    </div>
+                </div>
+                <div class="trip-summary" id="trip-summary"></div>
+            </div>
+        </div>
+
+        <div class="panel" id="panel-hopital">
+            <div class="card">
+                <div class="card-label"><span class="dot dot-amber"></span>Heure observée</div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>Heure</label>
+                        <input type="number" id="hospital-now-h" placeholder="16" min="0" max="23">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Min</label>
+                        <input type="number" id="hospital-now-m" placeholder="21" min="0" max="59">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Sec</label>
+                        <input type="number" id="hospital-now-s" placeholder="30" min="0" max="59">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-label"><span class="dot dot-red"></span>Chrono hôpital restant</div>
+                <div class="input-row">
+                    <div class="field">
+                        <label>Heure</label>
+                        <input type="number" id="hospital-rem-h" placeholder="23" min="0" max="24">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Min</label>
+                        <input type="number" id="hospital-rem-m" placeholder="59" min="0" max="59">
+                    </div>
+                    <span class="colon">:</span>
+                    <div class="field">
+                        <label>Sec</label>
+                        <input type="number" id="hospital-rem-s" placeholder="50" min="0" max="59">
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn-calc" onclick="calculateHospitalAttackTime()">Calculer l'heure d'attaque</button>
+
+            <div class="result" id="hospital-result">
+                <div class="result-title">Heure exacte de l'attaque</div>
+                <div class="result-distance" id="hospital-attack-time">—</div>
+                <div class="result-detail" id="hospital-detail"></div>
+            </div>
+        </div>
+
+        <footer>By Kurama</footer>
     </div>
 
-    <div class="panel active" id="panel-distance">
-        <div class="card">
-            <div class="card-label"><span class="dot dot-amber"></span>Village A</div>
-            <div class="input-row">
-                <div class="field">
-                    <label>X</label>
-                    <input type="number" id="x1" placeholder="32">
-                </div>
-                <span class="slash">/</span>
-                <div class="field">
-                    <label>Y</label>
-                    <input type="number" id="y1" placeholder="4">
-                </div>
-            </div>
-        </div>
+    <script>
+        const NAVAL_SPEEDS = {
+            1: 92, 2: 88, 3: 85, 4: 81, 5: 78,
+            6: 74, 7: 70, 8: 66, 9: 63, 10: 58,
+            11: 52, 12: 46, 13: 42, 14: 38, 15: 34,
+            16: 30, 17: 25, 18: 23, 19: 21, 20: 19
+        };
 
-        <div class="card">
-            <div class="card-label"><span class="dot dot-blue"></span>Village B</div>
-            <div class="input-row">
-                <div class="field">
-                    <label>X</label>
-                    <input type="number" id="x2" placeholder="30">
-                </div>
-                <span class="slash">/</span>
-                <div class="field">
-                    <label>Y</label>
-                    <input type="number" id="y2" placeholder="6">
-                </div>
-            </div>
-        </div>
+        const sel = document.getElementById('naval-level');
+        for (let i = 1; i <= 20; i++) {
+            const opt = document.createElement('option');
+            opt.value = i;
+            opt.textContent = 'Niveau ' + i + ' — ' + NAVAL_SPEEDS[i] + ' s/km';
+            sel.appendChild(opt);
+        }
 
-        <button class="btn-calc" onclick="calculate()">Calculer la distance</button>
+        function switchTab(name) {
+            document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+            document.querySelector('.tab[data-tab="' + name + '"]').classList.add('active');
+            document.getElementById('panel-' + name).classList.add('active');
+        }
 
-        <div class="result" id="result">
-            <div class="result-title">Distance</div>
-            <div class="result-distance" id="distanceValue">— <span>km</span></div>
-            <div class="result-detail" id="detail"></div>
-            <div class="visual-map">
-                <canvas id="mapCanvas" width="320" height="180"></canvas>
-            </div>
-        </div>
-    </div>
+        function getGridDistance(x1, y1, x2, y2) {
+            const dx = Math.abs(x2 - x1);
+            const dy = Math.abs(y2 - y1);
+            return Math.max(dx, dy);
+        }
 
-    <div class="panel" id="panel-trajet">
-        <div class="card">
-            <div class="card-label"><span class="dot dot-amber"></span>Heure de départ</div>
-            <div class="input-row">
-                <div class="field">
-                    <label>Heure</label>
-                    <input type="number" id="dep-h" placeholder="16" min="0" max="23">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Min</label>
-                    <input type="number" id="dep-m" placeholder="00" min="0" max="59">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Sec</label>
-                    <input type="number" id="dep-s" placeholder="10" min="0" max="59">
-                </div>
-            </div>
-        </div>
+        function calculate() {
+            const x1 = parseFloat(document.getElementById('x1').value);
+            const y1 = parseFloat(document.getElementById('y1').value);
+            const x2 = parseFloat(document.getElementById('x2').value);
+            const y2 = parseFloat(document.getElementById('y2').value);
 
-        <div class="card">
-            <div class="card-label"><span class="dot dot-blue"></span>Base navale</div>
-            <div class="field">
-                <label>Niveau</label>
-                <select id="naval-level">
-                    <option value="" disabled selected>Choisir le niveau</option>
-                </select>
-            </div>
-        </div>
+            if ([x1, y1, x2, y2].some(v => isNaN(v))) return;
 
-        <div class="card">
-            <div class="card-label"><span class="dot dot-green"></span>Distance</div>
-            <div class="field">
-                <label>Km</label>
-                <input type="number" id="trip-dist" placeholder="2" min="1">
-            </div>
-        </div>
+            const dx = x2 - x1;
+            const dy = y2 - y1;
+            const rounded = getGridDistance(x1, y1, x2, y2);
 
-        <div class="checkbox-row">
-            <input type="checkbox" id="speed-bonus">
-            <label for="speed-bonus">Bonus de vitesse (×2)</label>
-        </div>
+            document.getElementById('distanceValue').innerHTML =
+                rounded + ' <span>km</span>';
+            document.getElementById('detail').innerHTML =
+                '<strong>' + x1 + '/' + y1 + '</strong> → <strong>' + x2 + '/' + y2 + '</strong>  ·  |Δx|=' + Math.abs(dx) + '  |Δy|=' + Math.abs(dy);
 
-        <button class="btn-calc" onclick="calculateTrip()">Calculer le trajet</button>
+            document.getElementById('result').classList.add('visible');
+            drawMap(x1, y1, x2, y2);
+        }
 
-        <div class="result" id="trip-result">
-            <div class="result-title">Résultat du trajet</div>
-            <div class="trip-grid">
-                <div class="trip-block">
-                    <div class="trip-block-label">Durée aller</div>
-                    <div class="trip-block-value green" id="trip-duration">—</div>
-                </div>
-                <div class="trip-block">
-                    <div class="trip-block-label">Arrivée cible</div>
-                    <div class="trip-block-value blue" id="trip-arrival">—</div>
-                </div>
-            </div>
-            <div class="trip-summary" id="trip-summary"></div>
-        </div>
-    </div>
+        function drawMap(x1, y1, x2, y2) {
+            const canvas = document.getElementById('mapCanvas');
+            const ctx = canvas.getContext('2d');
+            const W = canvas.width;
+            const H = canvas.height;
+            const pad = 36;
 
-    <div class="panel" id="panel-hopital">
-        <div class="card">
-            <div class="card-label"><span class="dot dot-amber"></span>Heure observée</div>
-            <div class="input-row">
-                <div class="field">
-                    <label>Heure</label>
-                    <input type="number" id="hospital-now-h" placeholder="16" min="0" max="23">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Min</label>
-                    <input type="number" id="hospital-now-m" placeholder="21" min="0" max="59">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Sec</label>
-                    <input type="number" id="hospital-now-s" placeholder="30" min="0" max="59">
-                </div>
-            </div>
-        </div>
+            ctx.clearRect(0, 0, W, H);
+            ctx.fillStyle = '#0d1117';
+            ctx.fillRect(0, 0, W, H);
 
-        <div class="card">
-            <div class="card-label"><span class="dot dot-red"></span>Chrono hôpital restant</div>
-            <div class="input-row">
-                <div class="field">
-                    <label>Heure</label>
-                    <input type="number" id="hospital-rem-h" placeholder="23" min="0" max="24">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Min</label>
-                    <input type="number" id="hospital-rem-m" placeholder="59" min="0" max="59">
-                </div>
-                <span class="colon">:</span>
-                <div class="field">
-                    <label>Sec</label>
-                    <input type="number" id="hospital-rem-s" placeholder="50" min="0" max="59">
-                </div>
-            </div>
-        </div>
+            const allX = [x1, x2];
+            const allY = [y1, y2];
+            const minX = Math.min(...allX);
+            const maxX = Math.max(...allX);
+            const minY = Math.min(...allY);
+            const maxY = Math.max(...allY);
 
-        <button class="btn-calc" onclick="calculateHospitalAttackTime()">Calculer l'heure d'attaque</button>
+            const rangeX = maxX - minX || 1;
+            const rangeY = maxY - minY || 1;
 
-        <div class="result" id="hospital-result">
-            <div class="result-title">Heure exacte de l'attaque</div>
-            <div class="result-distance" id="hospital-attack-time">—</div>
-            <div class="result-detail" id="hospital-detail"></div>
-        </div>
-    </div>
+            const scaleX = (W - pad * 2) / rangeX;
+            const scaleY = (H - pad * 2) / rangeY;
+            const scale = Math.min(scaleX, scaleY);
 
-    <footer>By Kurama</footer>
-</div>
+            const offX = (W - rangeX * scale) / 2 - minX * scale;
+            const offY = (H - rangeY * scale) / 2 + maxY * scale;
 
-<script>
-    const NAVAL_SPEEDS = {
-        1: 92, 2: 88, 3: 85, 4: 81, 5: 78,
-        6: 74, 7: 70, 8: 66, 9: 63, 10: 58,
-        11: 52, 12: 46, 13: 42, 14: 38, 15: 34,
-        16: 30, 17: 25, 18: 23, 19: 21, 20: 19
-    };
+            function toCanvasX(v) { return v * scale + offX; }
+            function toCanvasY(v) { return offY - v * scale; }
 
-    const sel = document.getElementById('naval-level');
-    for (let i = 1; i <= 20; i++) {
-        const opt = document.createElement('option');
-        opt.value = i;
-        opt.textContent = 'Niveau ' + i + ' — ' + NAVAL_SPEEDS[i] + ' s/km';
-        sel.appendChild(opt);
-    }
+            ctx.strokeStyle = '#1c2333';
+            ctx.lineWidth = 1;
+            for (let x = Math.floor(minX); x <= Math.ceil(maxX); x++) {
+                ctx.beginPath();
+                ctx.moveTo(toCanvasX(x), pad - 10);
+                ctx.lineTo(toCanvasX(x), H - pad + 10);
+                ctx.stroke();
+            }
+            for (let y = Math.floor(minY); y <= Math.ceil(maxY); y++) {
+                ctx.beginPath();
+                ctx.moveTo(pad - 10, toCanvasY(y));
+                ctx.lineTo(W - pad + 10, toCanvasY(y));
+                ctx.stroke();
+            }
 
-    function switchTab(name) {
-        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-        document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
-        document.querySelector('.tab[data-tab="' + name + '"]').classList.add('active');
-        document.getElementById('panel-' + name).classList.add('active');
-    }
-
-    function getGridDistance(x1, y1, x2, y2) {
-        const dx = Math.abs(x2 - x1);
-        const dy = Math.abs(y2 - y1);
-        return Math.max(dx, dy);
-    }
-
-    function calculate() {
-        const x1 = parseFloat(document.getElementById('x1').value);
-        const y1 = parseFloat(document.getElementById('y1').value);
-        const x2 = parseFloat(document.getElementById('x2').value);
-        const y2 = parseFloat(document.getElementById('y2').value);
-
-        if ([x1, y1, x2, y2].some(v => isNaN(v))) return;
-
-        const dx = x2 - x1;
-        const dy = y2 - y1;
-        const rounded = getGridDistance(x1, y1, x2, y2);
-
-        document.getElementById('distanceValue').innerHTML =
-            rounded + ' <span>km</span>';
-        document.getElementById('detail').innerHTML =
-            '<strong>' + x1 + '/' + y1 + '</strong> → <strong>' + x2 + '/' + y2 + '</strong>  ·  |Δx|=' + Math.abs(dx) + '  |Δy|=' + Math.abs(dy);
-
-        document.getElementById('result').classList.add('visible');
-        drawMap(x1, y1, x2, y2);
-    }
-
-    function drawMap(x1, y1, x2, y2) {
-        const canvas = document.getElementById('mapCanvas');
-        const ctx = canvas.getContext('2d');
-        const W = canvas.width;
-        const H = canvas.height;
-        const pad = 36;
-
-        ctx.clearRect(0, 0, W, H);
-        ctx.fillStyle = '#0d1117';
-        ctx.fillRect(0, 0, W, H);
-
-        const allX = [x1, x2];
-        const allY = [y1, y2];
-        const minX = Math.min(...allX);
-        const maxX = Math.max(...allX);
-        const minY = Math.min(...allY);
-        const maxY = Math.max(...allY);
-
-        const rangeX = maxX - minX || 1;
-        const rangeY = maxY - minY || 1;
-
-        const scaleX = (W - pad * 2) / rangeX;
-        const scaleY = (H - pad * 2) / rangeY;
-        const scale = Math.min(scaleX, scaleY);
-
-        const offX = (W - rangeX * scale) / 2 - minX * scale;
-        const offY = (H - rangeY * scale) / 2 + maxY * scale;
-
-        function toCanvasX(v) { return v * scale + offX; }
-        function toCanvasY(v) { return offY - v * scale; }
-
-        ctx.strokeStyle = '#1c2333';
-        ctx.lineWidth = 1;
-        for (let x = Math.floor(minX); x <= Math.ceil(maxX); x++) {
+            ctx.setLineDash([6, 4]);
+            ctx.strokeStyle = 'rgba(232,168,50,0.35)';
+            ctx.lineWidth = 1.5;
             ctx.beginPath();
-            ctx.moveTo(toCanvasX(x), pad - 10);
-            ctx.lineTo(toCanvasX(x), H - pad + 10);
+            ctx.moveTo(toCanvasX(x1), toCanvasY(y1));
+            ctx.lineTo(toCanvasX(x2), toCanvasY(y2));
             ctx.stroke();
-        }
-        for (let y = Math.floor(minY); y <= Math.ceil(maxY); y++) {
+            ctx.setLineDash([]);
+
+            ctx.fillStyle = '#e8a832';
             ctx.beginPath();
-            ctx.moveTo(pad - 10, toCanvasY(y));
-            ctx.lineTo(W - pad + 10, toCanvasY(y));
-            ctx.stroke();
+            ctx.arc(toCanvasX(x1), toCanvasY(y1), 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#0e1117';
+            ctx.beginPath();
+            ctx.arc(toCanvasX(x1), toCanvasY(y1), 2, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.fillStyle = '#58a6ff';
+            ctx.beginPath();
+            ctx.arc(toCanvasX(x2), toCanvasY(y2), 5, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.fillStyle = '#0e1117';
+            ctx.beginPath();
+            ctx.arc(toCanvasX(x2), toCanvasY(y2), 2, 0, Math.PI * 2);
+            ctx.fill();
+
+            ctx.font = '600 11px "Chakra Petch", sans-serif';
+            ctx.fillStyle = '#e8a832';
+            ctx.fillText('A (' + x1 + '/' + y1 + ')', toCanvasX(x1) + 10, toCanvasY(y1) + 4);
+            ctx.fillStyle = '#58a6ff';
+            ctx.fillText('B (' + x2 + '/' + y2 + ')', toCanvasX(x2) + 10, toCanvasY(y2) + 4);
+
+            const mx = (toCanvasX(x1) + toCanvasX(x2)) / 2;
+            const my = (toCanvasY(y1) + toCanvasY(y2)) / 2;
+            const dist = getGridDistance(x1, y1, x2, y2);
+            ctx.font = '700 12px "Chakra Petch", sans-serif';
+            const label = dist + ' km';
+            const tw = ctx.measureText(label).width;
+            ctx.fillStyle = '#0e1117';
+            ctx.fillRect(mx - tw / 2 - 6, my - 8, tw + 12, 18);
+            ctx.fillStyle = '#3fb950';
+            ctx.fillText(label, mx - tw / 2, my + 5);
         }
 
-        ctx.setLineDash([6, 4]);
-        ctx.strokeStyle = 'rgba(232,168,50,0.35)';
-        ctx.lineWidth = 1.5;
-        ctx.beginPath();
-        ctx.moveTo(toCanvasX(x1), toCanvasY(y1));
-        ctx.lineTo(toCanvasX(x2), toCanvasY(y2));
-        ctx.stroke();
-        ctx.setLineDash([]);
-
-        ctx.fillStyle = '#e8a832';
-        ctx.beginPath();
-        ctx.arc(toCanvasX(x1), toCanvasY(y1), 5, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.fillStyle = '#0e1117';
-        ctx.beginPath();
-        ctx.arc(toCanvasX(x1), toCanvasY(y1), 2, 0, Math.PI * 2);
-        ctx.fill();
-
-        ctx.fillStyle = '#58a6ff';
-        ctx.beginPath();
-        ctx.arc(toCanvasX(x2), toCanvasY(y2), 5, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.fillStyle = '#0e1117';
-        ctx.beginPath();
-        ctx.arc(toCanvasX(x2), toCanvasY(y2), 2, 0, Math.PI * 2);
-        ctx.fill();
-
-        ctx.font = '600 11px "Chakra Petch", sans-serif';
-        ctx.fillStyle = '#e8a832';
-        ctx.fillText('A (' + x1 + '/' + y1 + ')', toCanvasX(x1) + 10, toCanvasY(y1) + 4);
-        ctx.fillStyle = '#58a6ff';
-        ctx.fillText('B (' + x2 + '/' + y2 + ')', toCanvasX(x2) + 10, toCanvasY(y2) + 4);
-
-        const mx = (toCanvasX(x1) + toCanvasX(x2)) / 2;
-        const my = (toCanvasY(y1) + toCanvasY(y2)) / 2;
-        const dist = getGridDistance(x1, y1, x2, y2);
-        ctx.font = '700 12px "Chakra Petch", sans-serif';
-        const label = dist + ' km';
-        const tw = ctx.measureText(label).width;
-        ctx.fillStyle = '#0e1117';
-        ctx.fillRect(mx - tw / 2 - 6, my - 8, tw + 12, 18);
-        ctx.fillStyle = '#3fb950';
-        ctx.fillText(label, mx - tw / 2, my + 5);
-    }
-
-    function formatDuration(totalSec) {
-        const h = Math.floor(totalSec / 3600);
-        const m = Math.floor((totalSec % 3600) / 60);
-        const s = totalSec % 60;
-        const pad2 = v => String(v).padStart(2, '0');
-        if (h > 0) return h + 'h ' + pad2(m) + 'm ' + pad2(s) + 's';
-        if (m > 0) return m + 'm ' + pad2(s) + 's';
-        return s + 's';
-    }
-
-    function formatTime(h, m, s) {
-        const pad2 = v => String(v).padStart(2, '0');
-        return pad2(h % 24) + ':' + pad2(m) + ':' + pad2(s);
-    }
-
-    function isValidTimePart(value, max) {
-        return Number.isInteger(value) && value >= 0 && value <= max;
-    }
-
-    function calculateHospitalAttackTime() {
-        const nowH = parseInt(document.getElementById('hospital-now-h').value, 10);
-        const nowM = parseInt(document.getElementById('hospital-now-m').value, 10);
-        const nowS = parseInt(document.getElementById('hospital-now-s').value, 10);
-        const remH = parseInt(document.getElementById('hospital-rem-h').value, 10);
-        const remM = parseInt(document.getElementById('hospital-rem-m').value, 10);
-        const remS = parseInt(document.getElementById('hospital-rem-s').value, 10);
-        const hospitalDuration = 24 * 3600;
-
-        if (
-            !isValidTimePart(nowH, 23) ||
-            !isValidTimePart(nowM, 59) ||
-            !isValidTimePart(nowS, 59) ||
-            !isValidTimePart(remH, 24) ||
-            !isValidTimePart(remM, 59) ||
-            !isValidTimePart(remS, 59)
-        ) {
-            return;
+        function formatDuration(totalSec) {
+            const h = Math.floor(totalSec / 3600);
+            const m = Math.floor((totalSec % 3600) / 60);
+            const s = totalSec % 60;
+            const pad2 = v => String(v).padStart(2, '0');
+            if (h > 0) return h + 'h ' + pad2(m) + 'm ' + pad2(s) + 's';
+            if (m > 0) return m + 'm ' + pad2(s) + 's';
+            return s + 's';
         }
 
-        const remainingSec = remH * 3600 + remM * 60 + remS;
-        if (remainingSec > hospitalDuration) return;
+        function formatTime(h, m, s) {
+            const pad2 = v => String(v).padStart(2, '0');
+            return pad2(h % 24) + ':' + pad2(m) + ':' + pad2(s);
+        }
 
-        const nowTotalSec = nowH * 3600 + nowM * 60 + nowS;
-        const elapsedSec = hospitalDuration - remainingSec;
-        const attackTotalSec = nowTotalSec - elapsedSec;
-        const normalizedAttackSec = ((attackTotalSec % hospitalDuration) + hospitalDuration) % hospitalDuration;
-        const attackH = Math.floor(normalizedAttackSec / 3600);
-        const attackM = Math.floor((normalizedAttackSec % 3600) / 60);
-        const attackS = normalizedAttackSec % 60;
-        const crossedPreviousDay = attackTotalSec < 0;
+        function isValidTimePart(value, max) {
+            return Number.isInteger(value) && value >= 0 && value <= max;
+        }
 
-        document.getElementById('hospital-attack-time').textContent = formatTime(attackH, attackM, attackS);
-        document.getElementById('hospital-detail').innerHTML =
-            'Observation à <strong>' + formatTime(nowH, nowM, nowS) + '</strong>' +
-            ' · Temps écoulé dans l\'hôpital <strong>' + formatDuration(elapsedSec) + '</strong>' +
-            (crossedPreviousDay ? ' · Attaque survenue <strong>la veille</strong>' : ' · Attaque survenue <strong>le même jour</strong>');
+        function calculateHospitalAttackTime() {
+            const nowH = parseInt(document.getElementById('hospital-now-h').value, 10);
+            const nowM = parseInt(document.getElementById('hospital-now-m').value, 10);
+            const nowS = parseInt(document.getElementById('hospital-now-s').value, 10);
+            const remH = parseInt(document.getElementById('hospital-rem-h').value, 10);
+            const remM = parseInt(document.getElementById('hospital-rem-m').value, 10);
+            const remS = parseInt(document.getElementById('hospital-rem-s').value, 10);
+            const hospitalDuration = 24 * 3600;
 
-        document.getElementById('hospital-result').classList.add('visible');
-    }
+            if (
+                !isValidTimePart(nowH, 23) ||
+                !isValidTimePart(nowM, 59) ||
+                !isValidTimePart(nowS, 59) ||
+                !isValidTimePart(remH, 24) ||
+                !isValidTimePart(remM, 59) ||
+                !isValidTimePart(remS, 59)
+            ) {
+                return;
+            }
 
-    function calculateTrip() {
-        const depH = parseInt(document.getElementById('dep-h').value);
-        const depM = parseInt(document.getElementById('dep-m').value);
-        const depS = parseInt(document.getElementById('dep-s').value);
-        const level = parseInt(document.getElementById('naval-level').value);
-        const dist = parseInt(document.getElementById('trip-dist').value);
+            const remainingSec = remH * 3600 + remM * 60 + remS;
+            if (remainingSec > hospitalDuration) return;
 
-        if ([depH, depM, depS, level, dist].some(v => isNaN(v))) return;
-        if (!NAVAL_SPEEDS[level]) return;
+            const nowTotalSec = nowH * 3600 + nowM * 60 + nowS;
+            const elapsedSec = hospitalDuration - remainingSec;
+            const attackTotalSec = nowTotalSec - elapsedSec;
+            const normalizedAttackSec = ((attackTotalSec % hospitalDuration) + hospitalDuration) % hospitalDuration;
+            const attackH = Math.floor(normalizedAttackSec / 3600);
+            const attackM = Math.floor((normalizedAttackSec % 3600) / 60);
+            const attackS = normalizedAttackSec % 60;
+            const crossedPreviousDay = attackTotalSec < 0;
 
-        const speed = NAVAL_SPEEDS[level];
-        const bonus = document.getElementById('speed-bonus').checked ? 0.5 : 1;
-        const travelSec = Math.floor(dist * speed * bonus);
+            document.getElementById('hospital-attack-time').textContent = formatTime(attackH, attackM, attackS);
+            document.getElementById('hospital-detail').innerHTML =
+                'Observation à <strong>' + formatTime(nowH, nowM, nowS) + '</strong>' +
+                ' · Temps écoulé dans l\'hôpital <strong>' + formatDuration(elapsedSec) + '</strong>'
 
-        const depTotalSec = depH * 3600 + depM * 60 + depS;
-        const arrivalTotalSec = depTotalSec + travelSec;
+            document.getElementById('hospital-result').classList.add('visible');
+        }
 
-        const arrH = Math.floor(arrivalTotalSec / 3600);
-        const arrM = Math.floor((arrivalTotalSec % 3600) / 60);
-        const arrS = arrivalTotalSec % 60;
+        function calculateTrip() {
+            const depH = parseInt(document.getElementById('dep-h').value);
+            const depM = parseInt(document.getElementById('dep-m').value);
+            const depS = parseInt(document.getElementById('dep-s').value);
+            const level = parseInt(document.getElementById('naval-level').value);
+            const dist = parseInt(document.getElementById('trip-dist').value);
 
-        document.getElementById('trip-duration').textContent = formatDuration(travelSec);
-        document.getElementById('trip-arrival').textContent = formatTime(arrH, arrM, arrS);
+            if ([depH, depM, depS, level, dist].some(v => isNaN(v))) return;
+            if (!NAVAL_SPEEDS[level]) return;
 
-        document.getElementById('trip-summary').innerHTML =
-            'Départ à <strong>' + formatTime(depH, depM, depS) + '</strong>' +
-            ' · Base navale <strong>niv. ' + level + '</strong>' +
-            ' (' + speed + ' s/km)' +
-            ' · <strong>' + dist + ' km</strong>';
+            const speed = NAVAL_SPEEDS[level];
+            const bonus = document.getElementById('speed-bonus').checked ? 0.5 : 1;
+            const travelSec = Math.floor(dist * speed * bonus);
 
-        document.getElementById('trip-result').classList.add('visible');
-    }
+            const depTotalSec = depH * 3600 + depM * 60 + depS;
+            const arrivalTotalSec = depTotalSec + travelSec;
 
-    document.querySelectorAll('#panel-distance input').forEach(input => {
-        input.addEventListener('keydown', e => {
-            if (e.key === 'Enter') calculate();
+            const arrH = Math.floor(arrivalTotalSec / 3600);
+            const arrM = Math.floor((arrivalTotalSec % 3600) / 60);
+            const arrS = arrivalTotalSec % 60;
+
+            document.getElementById('trip-duration').textContent = formatDuration(travelSec);
+            document.getElementById('trip-arrival').textContent = formatTime(arrH, arrM, arrS);
+
+            document.getElementById('trip-summary').innerHTML =
+                'Départ à <strong>' + formatTime(depH, depM, depS) + '</strong>' +
+                ' · Base navale <strong>niv. ' + level + '</strong>' +
+                ' (' + speed + ' s/km)' +
+                ' · <strong>' + dist + ' km</strong>';
+
+            document.getElementById('trip-result').classList.add('visible');
+        }
+
+        document.querySelectorAll('#panel-distance input').forEach(input => {
+            input.addEventListener('keydown', e => {
+                if (e.key === 'Enter') calculate();
+            });
         });
-    });
 
-    document.querySelectorAll('#panel-trajet input, #panel-trajet select').forEach(el => {
-        el.addEventListener('keydown', e => {
-            if (e.key === 'Enter') calculateTrip();
+        document.querySelectorAll('#panel-trajet input, #panel-trajet select').forEach(el => {
+            el.addEventListener('keydown', e => {
+                if (e.key === 'Enter') calculateTrip();
+            });
         });
-    });
 
-    document.querySelectorAll('#panel-hopital input').forEach(input => {
-        input.addEventListener('keydown', e => {
-            if (e.key === 'Enter') calculateHospitalAttackTime();
+        document.querySelectorAll('#panel-hopital input').forEach(input => {
+            input.addEventListener('keydown', e => {
+                if (e.key === 'Enter') calculateHospitalAttackTime();
+            });
         });
-    });
 
-    const now = new Date();
-    document.getElementById('hospital-now-h').value = now.getHours();
-    document.getElementById('hospital-now-m').value = String(now.getMinutes()).padStart(2, '0');
-    document.getElementById('hospital-now-s').value = String(now.getSeconds()).padStart(2, '0');
-</script>
+        const now = new Date();
+        document.getElementById('hospital-now-h').value = now.getHours();
+        document.getElementById('hospital-now-m').value = String(now.getMinutes()).padStart(2, '0');
+        document.getElementById('hospital-now-s').value = String(now.getSeconds()).padStart(2, '0');
+    </script>
 
 </body>
+
 </html>
