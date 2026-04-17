@@ -72,7 +72,7 @@
         }
 
         .container {
-            max-width: 560px;
+            max-width: 1080px;
             width: 100%;
             animation: fadeUp 0.6s ease-out;
         }
@@ -445,6 +445,120 @@
             color: var(--text);
         }
 
+        .stack {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .stat-card {
+            background: var(--input-bg);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .stat-label {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 0.45rem;
+        }
+
+        .stat-value {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .filters-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .split-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 1rem;
+        }
+
+        .helper-text {
+            margin-top: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.82rem;
+            line-height: 1.6;
+        }
+
+        .list-shell {
+            overflow: hidden;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+        }
+
+        .ranking-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--input-bg);
+        }
+
+        .ranking-table th,
+        .ranking-table td {
+            padding: 0.85rem 0.9rem;
+            border-bottom: 1px solid var(--border);
+            text-align: left;
+            font-size: 0.9rem;
+        }
+
+        .ranking-table th {
+            font-family: 'Chakra Petch', sans-serif;
+            font-size: 0.72rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        .ranking-table tbody tr:hover {
+            background: rgba(232, 168, 50, 0.04);
+        }
+
+        .ranking-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        .mono {
+            font-family: 'Chakra Petch', sans-serif;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.28rem 0.55rem;
+            border-radius: 999px;
+            border: 1px solid rgba(88, 166, 255, 0.28);
+            background: rgba(88, 166, 255, 0.08);
+            color: var(--blue);
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .empty-state {
+            padding: 1.25rem;
+            text-align: center;
+            color: var(--text-muted);
+            background: var(--input-bg);
+        }
+
         footer {
             margin-top: 2.5rem;
             text-align: center;
@@ -471,6 +585,18 @@
                 font-size: 1.05rem;
             }
         }
+
+        @media (max-width: 900px) {
+            .stats-grid,
+            .filters-grid,
+            .split-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tabs {
+                flex-wrap: wrap;
+            }
+        }
     </style>
 </head>
 
@@ -479,13 +605,14 @@
     <div class="container">
         <header>
             <h1>Outils LOP</h1>
-            <p>Calcul de distance, trajet et heure d'attaque</p>
+            <p>Calcul de distance, trajet, hôpital et classement des joueurs par clan</p>
         </header>
 
         <div class="tabs">
             <div class="tab active" data-tab="distance" onclick="switchTab('distance')">Distance</div>
             <div class="tab" data-tab="trajet" onclick="switchTab('trajet')">Trajet</div>
             <div class="tab" data-tab="hopital" onclick="switchTab('hopital')">Hôpital</div>
+            <div class="tab" data-tab="clans" onclick="switchTab('clans')">Clans</div>
         </div>
 
         <div class="panel active" id="panel-distance">
@@ -643,9 +770,120 @@
             </div>
         </div>
 
+        <div class="panel" id="panel-clans">
+            <div class="stack">
+                <div class="card">
+                    <div class="card-label"><span class="dot dot-amber"></span>Vue globale</div>
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-label">Joueurs chargés</div>
+                            <div class="stat-value" id="stats-total-players">—</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Clans détectés</div>
+                            <div class="stat-value" id="stats-total-clans">—</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Joueurs en clan</div>
+                            <div class="stat-value" id="stats-total-members">—</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-label">Clans affichés</div>
+                            <div class="stat-value" id="stats-filtered-clans">—</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-label"><span class="dot dot-blue"></span>Filtres du classement</div>
+                    <div class="filters-grid">
+                        <div class="field">
+                            <label>Joueur de reference</label>
+                            <input type="text" id="ranking-player" list="players-list" placeholder="Pseudo du joueur">
+                        </div>
+                        <div class="field">
+                            <label>Clan</label>
+                            <select id="clan-filter"></select>
+                        </div>
+                        <div class="field">
+                            <label>Distance max au clan</label>
+                            <input type="number" id="distance-filter" placeholder="Ex: 10" min="0">
+                        </div>
+                    </div>
+                    <div class="helper-text" id="clan-filter-summary">
+                        Choisis un pseudo et un clan pour classer les joueurs de ce clan selon la distance depuis ce joueur.
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-label"><span class="dot dot-green"></span>Classement des joueurs par clan</div>
+                    <div class="list-shell">
+                        <table class="ranking-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Clan</th>
+                                    <th>Joueur</th>
+                                    <th>Position</th>
+                                    <th>Distance</th>
+                                    <th>Depuis</th>
+                                </tr>
+                            </thead>
+                            <tbody id="clan-ranking-body">
+                                <tr>
+                                    <td colspan="6" class="empty-state">Chargement des donnees...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="split-grid">
+                    <div class="card">
+                        <div class="card-label"><span class="dot dot-amber"></span>Distance joueur vers clan</div>
+                        <div class="field">
+                            <label>Joueur</label>
+                            <input type="text" id="clan-distance-player" list="players-list" placeholder="Pseudo du joueur">
+                        </div>
+                        <div class="field" style="margin-top: 1rem;">
+                            <label>Clan cible</label>
+                            <select id="clan-distance-target"></select>
+                        </div>
+                        <button class="btn-calc" onclick="calculatePlayerToClanDistance()">Calculer</button>
+                        <div class="result" id="player-clan-result">
+                            <div class="result-title">Distance joueur → clan</div>
+                            <div class="result-distance" id="player-clan-distance-value">— <span>km</span></div>
+                            <div class="result-detail" id="player-clan-distance-detail"></div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-label"><span class="dot dot-red"></span>Distance entre deux joueurs</div>
+                        <div class="field">
+                            <label>Joueur A</label>
+                            <input type="text" id="player-a" list="players-list" placeholder="Premier pseudo">
+                        </div>
+                        <div class="field" style="margin-top: 1rem;">
+                            <label>Joueur B</label>
+                            <input type="text" id="player-b" list="players-list" placeholder="Second pseudo">
+                        </div>
+                        <button class="btn-calc" onclick="calculatePlayerDistance()">Calculer</button>
+                        <div class="result" id="player-player-result">
+                            <div class="result-title">Distance joueur → joueur</div>
+                            <div class="result-distance" id="player-player-distance-value">— <span>km</span></div>
+                            <div class="result-detail" id="player-player-distance-detail"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <datalist id="players-list"></datalist>
+
         <footer>By Kurama</footer>
     </div>
 
+    <script src="./position-data.js"></script>
     <script>
         const NAVAL_SPEEDS = {
             1: 92, 2: 88, 3: 85, 4: 81, 5: 78,
@@ -653,6 +891,8 @@
             11: 52, 12: 46, 13: 42, 14: 38, 15: 34,
             16: 30, 17: 25, 18: 23, 19: 21, 20: 19
         };
+        let players = [];
+        let clans = [];
 
         const sel = document.getElementById('naval-level');
         for (let i = 1; i <= 20; i++) {
@@ -673,6 +913,234 @@
             const dx = Math.abs(x2 - x1);
             const dy = Math.abs(y2 - y1);
             return Math.max(dx, dy);
+        }
+
+        function normalizeText(value) {
+            return String(value || '').trim().toLowerCase();
+        }
+
+        function getClanName(player) {
+            return player?.clanMember?.clan?.name || null;
+        }
+
+        function findPlayerByNickname(nickname) {
+            const normalized = normalizeText(nickname);
+            return players.find(player => normalizeText(player.nickname) === normalized) || null;
+        }
+
+        function getNearestClanMemberDistance(player, clanMembers) {
+            let nearestMember = null;
+            let nearestDistance = Infinity;
+
+            clanMembers.forEach(member => {
+                const distance = getGridDistance(player.posX, player.posY, member.posX, member.posY);
+                if (distance < nearestDistance) {
+                    nearestDistance = distance;
+                    nearestMember = member;
+                }
+            });
+
+            return {
+                nearestMember,
+                nearestDistance
+            };
+        }
+
+        function buildClansData(sourcePlayers) {
+            const clansMap = new Map();
+
+            sourcePlayers.forEach(player => {
+                const clanName = getClanName(player);
+                if (!clanName) return;
+
+                if (!clansMap.has(clanName)) {
+                    clansMap.set(clanName, {
+                        name: clanName,
+                        members: []
+                    });
+                }
+
+                const clan = clansMap.get(clanName);
+                clan.members.push(player);
+            });
+
+            return Array.from(clansMap.values())
+                .map(clan => {
+                    return {
+                        name: clan.name,
+                        size: clan.members.length,
+                        members: clan.members.slice().sort((a, b) => a.nickname.localeCompare(b.nickname, 'fr', { sensitivity: 'base' }))
+                    };
+                })
+                .sort((a, b) => {
+                    if (a.size !== b.size) return b.size - a.size;
+                    return a.name.localeCompare(b.name, 'fr', { sensitivity: 'base' });
+                });
+        }
+
+        function formatCoord(value) {
+            return Number.isInteger(value) ? String(value) : value.toFixed(1);
+        }
+
+        function escapeHtml(value) {
+            return String(value)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function fillPlayersDatalist() {
+            const datalist = document.getElementById('players-list');
+            datalist.innerHTML = '';
+
+            players
+                .slice()
+                .sort((a, b) => a.nickname.localeCompare(b.nickname, 'fr', { sensitivity: 'base' }))
+                .forEach(player => {
+                    const option = document.createElement('option');
+                    option.value = player.nickname;
+                    datalist.appendChild(option);
+                });
+        }
+
+        function fillClanSelects() {
+            const options = ['<option value="">Tous les clans</option>']
+                .concat(clans.map(clan => '<option value="' + escapeHtml(clan.name) + '">' + escapeHtml(clan.name) + ' (' + clan.size + ')</option>'));
+
+            document.getElementById('clan-filter').innerHTML = options.join('');
+            document.getElementById('clan-distance-target').innerHTML = ['<option value="" disabled selected>Choisir un clan</option>']
+                .concat(clans.map(clan => '<option value="' + escapeHtml(clan.name) + '">' + escapeHtml(clan.name) + '</option>'))
+                .join('');
+        }
+
+        function updateClanStats(visibleRows, visibleClans) {
+            document.getElementById('stats-total-players').textContent = players.length;
+            document.getElementById('stats-total-clans').textContent = clans.length;
+            document.getElementById('stats-total-members').textContent = players.filter(player => getClanName(player)).length;
+            document.getElementById('stats-filtered-clans').textContent = visibleClans;
+
+            const selectedClan = document.getElementById('clan-filter').value;
+            const nickname = document.getElementById('ranking-player').value.trim();
+            const maxDistance = document.getElementById('distance-filter').value.trim();
+
+            const parts = [visibleRows + ' joueur(s) affiché(s)'];
+            if (nickname) parts.push('depuis: ' + nickname);
+            if (selectedClan) parts.push('clan: ' + selectedClan);
+            if (maxDistance) parts.push('distance max: ' + maxDistance + ' km');
+
+            document.getElementById('clan-filter-summary').textContent = parts.join(' · ') + '. Les distances sont calculees comme dans l\'onglet Distance.';
+        }
+
+        function renderClanRanking() {
+            const selectedClan = document.getElementById('clan-filter').value;
+            const referencePlayer = findPlayerByNickname(document.getElementById('ranking-player').value);
+            const maxDistanceValue = document.getElementById('distance-filter').value;
+            const maxDistance = maxDistanceValue === '' ? null : Number(maxDistanceValue);
+            const body = document.getElementById('clan-ranking-body');
+            const rows = [];
+            let rank = 1;
+            const clan = clans.find(entry => entry.name === selectedClan);
+
+            if (!selectedClan || !referencePlayer) {
+                body.innerHTML = '<tr><td colspan="6" class="empty-state">Choisis un pseudo et un clan pour afficher le classement.</td></tr>';
+                updateClanStats(0, 0);
+                return;
+            }
+
+            if (!clan) {
+                body.innerHTML = '<tr><td colspan="6" class="empty-state">Clan introuvable.</td></tr>';
+                updateClanStats(0, 0);
+                return;
+            }
+
+            const clanRows = clan.members
+                .map(member => ({
+                    ...member,
+                    distanceToReference: getGridDistance(referencePlayer.posX, referencePlayer.posY, member.posX, member.posY)
+                }))
+                .filter(member => {
+                    if (maxDistance !== null && !Number.isNaN(maxDistance) && member.distanceToReference > maxDistance) return false;
+                    return true;
+                })
+                .sort((a, b) => {
+                    if (a.distanceToReference !== b.distanceToReference) return a.distanceToReference - b.distanceToReference;
+                    return a.nickname.localeCompare(b.nickname, 'fr', { sensitivity: 'base' });
+                });
+
+            clanRows.forEach(member => {
+                rows.push(
+                    '<tr>' +
+                    '<td class="mono">' + rank++ + '</td>' +
+                    '<td><span class="pill">' + escapeHtml(clan.name) + '</span></td>' +
+                    '<td>' + escapeHtml(member.nickname) + '</td>' +
+                    '<td class="mono">' + member.posX + '/' + member.posY + '</td>' +
+                    '<td class="mono">' + member.distanceToReference + ' km</td>' +
+                    '<td class="mono">' + escapeHtml(referencePlayer.nickname) + ' (' + referencePlayer.posX + '/' + referencePlayer.posY + ')</td>' +
+                    '</tr>'
+                );
+            });
+
+            body.innerHTML = rows.length
+                ? rows.join('')
+                : '<tr><td colspan="6" class="empty-state">Aucun joueur ne correspond aux filtres actuels.</td></tr>';
+
+            updateClanStats(rows.length, 1);
+        }
+
+        function calculatePlayerToClanDistance() {
+            const nickname = document.getElementById('clan-distance-player').value;
+            const clanName = document.getElementById('clan-distance-target').value;
+            const player = findPlayerByNickname(nickname);
+            const clan = clans.find(entry => entry.name === clanName);
+
+            if (!player || !clan) return;
+
+            const { nearestMember, nearestDistance } = getNearestClanMemberDistance(player, clan.members);
+            if (!nearestMember) return;
+
+            document.getElementById('player-clan-distance-value').innerHTML = nearestDistance + ' <span>km</span>';
+            document.getElementById('player-clan-distance-detail').innerHTML =
+                '<strong>' + escapeHtml(player.nickname) + '</strong> (' + player.posX + '/' + player.posY + ') → ' +
+                '<strong>' + escapeHtml(clan.name) + '</strong> via <strong>' + escapeHtml(nearestMember.nickname) + '</strong> (' + nearestMember.posX + '/' + nearestMember.posY + ')';
+            document.getElementById('player-clan-result').classList.add('visible');
+        }
+
+        function calculatePlayerDistance() {
+            const playerA = findPlayerByNickname(document.getElementById('player-a').value);
+            const playerB = findPlayerByNickname(document.getElementById('player-b').value);
+
+            if (!playerA || !playerB) return;
+
+            const distance = getGridDistance(playerA.posX, playerA.posY, playerB.posX, playerB.posY);
+            document.getElementById('player-player-distance-value').innerHTML = distance + ' <span>km</span>';
+            document.getElementById('player-player-distance-detail').innerHTML =
+                '<strong>' + escapeHtml(playerA.nickname) + '</strong> (' + playerA.posX + '/' + playerA.posY + ') → ' +
+                '<strong>' + escapeHtml(playerB.nickname) + '</strong> (' + playerB.posX + '/' + playerB.posY + ')';
+            document.getElementById('player-player-result').classList.add('visible');
+        }
+
+        async function loadClanPanel() {
+            try {
+                if (Array.isArray(window.POSITIONS_DATA) && window.POSITIONS_DATA.length) {
+                    players = window.POSITIONS_DATA;
+                } else {
+                    const response = await fetch('./position.json');
+                    if (!response.ok) throw new Error('Impossible de charger position.json');
+                    players = await response.json();
+                }
+
+                clans = buildClansData(players);
+
+                fillPlayersDatalist();
+                fillClanSelects();
+                renderClanRanking();
+            } catch (error) {
+                document.getElementById('clan-ranking-body').innerHTML =
+                    '<tr><td colspan="6" class="empty-state">Chargement impossible des donnees joueurs.</td></tr>';
+                document.getElementById('clan-filter-summary').textContent = error.message;
+            }
         }
 
         function calculate() {
@@ -897,10 +1365,33 @@
             });
         });
 
+        document.querySelectorAll('#panel-clans input, #panel-clans select').forEach(el => {
+            const skipRankingIds = ['clan-distance-player', 'clan-distance-target', 'player-a', 'player-b'];
+            const rerenderRanking = event => {
+                if (skipRankingIds.includes(event.target.id)) return;
+                renderClanRanking();
+            };
+
+            el.addEventListener('input', rerenderRanking);
+            el.addEventListener('change', rerenderRanking);
+            el.addEventListener('keydown', e => {
+                if (e.key === 'Enter') {
+                    if (e.target.id === 'clan-distance-player' || e.target.id === 'clan-distance-target') {
+                        calculatePlayerToClanDistance();
+                    } else if (e.target.id === 'player-a' || e.target.id === 'player-b') {
+                        calculatePlayerDistance();
+                    } else {
+                        renderClanRanking();
+                    }
+                }
+            });
+        });
+
         const now = new Date();
         document.getElementById('hospital-now-h').value = now.getHours();
         document.getElementById('hospital-now-m').value = String(now.getMinutes()).padStart(2, '0');
         document.getElementById('hospital-now-s').value = String(now.getSeconds()).padStart(2, '0');
+        loadClanPanel();
     </script>
 
 </body>

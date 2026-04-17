@@ -1,0 +1,2081 @@
+[
+  {
+    "nickname": "Anakin",
+    "posX": 17,
+    "posY": -3,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yaxoo",
+    "posX": 0,
+    "posY": 14,
+    "clanMember": {
+      "clan": {
+        "id": 16,
+        "name": "S O S"
+      }
+    }
+  },
+  {
+    "nickname": "Test",
+    "posX": -21,
+    "posY": -10,
+    "clanMember": null
+  },
+  {
+    "nickname": "ninja",
+    "posX": 21,
+    "posY": -9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ninjawarior",
+    "posX": -12,
+    "posY": 22,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ninja93",
+    "posX": -5,
+    "posY": -22,
+    "clanMember": null
+  },
+  {
+    "nickname": "Test32",
+    "posX": 21,
+    "posY": 14,
+    "clanMember": null
+  },
+  {
+    "nickname": "PAPAgo1",
+    "posX": -23,
+    "posY": 4,
+    "clanMember": null
+  },
+  {
+    "nickname": "Skiig",
+    "posX": 14,
+    "posY": -20,
+    "clanMember": null
+  },
+  {
+    "nickname": "shaolinZeubi",
+    "posX": 3,
+    "posY": 24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Utopia",
+    "posX": 8,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "hamid",
+    "posX": -18,
+    "posY": -16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yaxoo3",
+    "posX": 24,
+    "posY": -1,
+    "clanMember": null
+  },
+  {
+    "nickname": "Barberousse",
+    "posX": -17,
+    "posY": 17,
+    "clanMember": null
+  },
+  {
+    "nickname": "Merlin",
+    "posX": -4,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Opsraw",
+    "posX": 3,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sialyart",
+    "posX": 14,
+    "posY": 20,
+    "clanMember": null
+  },
+  {
+    "nickname": "Namii",
+    "posX": -24,
+    "posY": -6,
+    "clanMember": null
+  },
+  {
+    "nickname": "King",
+    "posX": 21,
+    "posY": -14,
+    "clanMember": null
+  },
+  {
+    "nickname": "snowden",
+    "posX": -8,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Najax",
+    "posX": -10,
+    "posY": -22,
+    "clanMember": null
+  },
+  {
+    "nickname": "younext",
+    "posX": 24,
+    "posY": 10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Dembele974",
+    "posX": -23,
+    "posY": 10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Testeru",
+    "posX": 10,
+    "posY": -22,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kal",
+    "posX": 8,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sir Mordred",
+    "posX": 3,
+    "posY": 6,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "kyosh1ro",
+    "posX": -5,
+    "posY": -10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Alpa",
+    "posX": 27,
+    "posY": -34,
+    "clanMember": {
+      "clan": {
+        "id": 16,
+        "name": "S O S"
+      }
+    }
+  },
+  {
+    "nickname": "Senjou",
+    "posX": 1,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Gandika",
+    "posX": 2,
+    "posY": 4,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "sann",
+    "posX": -1,
+    "posY": -1,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "SantaBanane",
+    "posX": -21,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Narutosun",
+    "posX": -2,
+    "posY": -4,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Shark",
+    "posX": 6,
+    "posY": 2,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "Naruto",
+    "posX": 8,
+    "posY": -11,
+    "clanMember": null
+  },
+  {
+    "nickname": "John Wish",
+    "posX": 26,
+    "posY": -6,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kiyotaka",
+    "posX": -14,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "Xien",
+    "posX": 8,
+    "posY": -4,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Jouton",
+    "posX": -4,
+    "posY": -26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Shanks",
+    "posX": 20,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "dali",
+    "posX": -24,
+    "posY": 1,
+    "clanMember": null
+  },
+  {
+    "nickname": "Beru",
+    "posX": 18,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "LUFFY",
+    "posX": -2,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "old aizen",
+    "posX": -17,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Shanks Gros Pecs",
+    "posX": 26,
+    "posY": 5,
+    "clanMember": null
+  },
+  {
+    "nickname": "MagicPouley",
+    "posX": 8,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ragvald",
+    "posX": -20,
+    "posY": 15,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ashoka",
+    "posX": -8,
+    "posY": 1,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "TheDeath",
+    "posX": -8,
+    "posY": 10,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Nika",
+    "posX": 6,
+    "posY": -26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Vgto",
+    "posX": 13,
+    "posY": 23,
+    "clanMember": null
+  },
+  {
+    "nickname": "Muta",
+    "posX": -25,
+    "posY": -7,
+    "clanMember": null
+  },
+  {
+    "nickname": "boboskybson",
+    "posX": 5,
+    "posY": -13,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "Emperor",
+    "posX": 25,
+    "posY": -10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Abc",
+    "posX": -12,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yike",
+    "posX": -9,
+    "posY": -26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yolo la life",
+    "posX": 22,
+    "posY": 14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Testo test",
+    "posX": -25,
+    "posY": 6,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kumiko",
+    "posX": 6,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yoshiland",
+    "posX": 14,
+    "posY": -23,
+    "clanMember": null
+  },
+  {
+    "nickname": "goku",
+    "posX": 3,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "turbozeer",
+    "posX": -21,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "OhYeah",
+    "posX": 28,
+    "posY": -2,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sanji",
+    "posX": -18,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ineeess",
+    "posX": 0,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Roma",
+    "posX": 17,
+    "posY": 19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mounia ",
+    "posX": -27,
+    "posY": -3,
+    "clanMember": null
+  },
+  {
+    "nickname": "Aaa",
+    "posX": 22,
+    "posY": -16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sushi",
+    "posX": -4,
+    "posY": 28,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yolo",
+    "posX": -15,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "test-111",
+    "posX": 26,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Owen",
+    "posX": -24,
+    "posY": 13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Thogou",
+    "posX": 11,
+    "posY": -26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Cedo",
+    "posX": 11,
+    "posY": 26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Gaimon",
+    "posX": -26,
+    "posY": -12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Wailhart",
+    "posX": 4,
+    "posY": -5,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Luca",
+    "posX": 26,
+    "posY": -8,
+    "clanMember": null
+  },
+  {
+    "nickname": "Renard",
+    "posX": -15,
+    "posY": 25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Aizen",
+    "posX": 0,
+    "posY": 4,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Kai",
+    "posX": 10,
+    "posY": 2,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "Oozy",
+    "posX": -4,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Satoru Gojo",
+    "posX": 22,
+    "posY": 17,
+    "clanMember": null
+  },
+  {
+    "nickname": "Orkhas",
+    "posX": -27,
+    "posY": 2,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sir Lewis Hamilton",
+    "posX": 1,
+    "posY": -10,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "NUMERO UNO",
+    "posX": 19,
+    "posY": -20,
+    "clanMember": null
+  },
+  {
+    "nickname": "Griffon",
+    "posX": 0,
+    "posY": 28,
+    "clanMember": null
+  },
+  {
+    "nickname": "Alexander Asimov",
+    "posX": -19,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Esquie",
+    "posX": 28,
+    "posY": 3,
+    "clanMember": null
+  },
+  {
+    "nickname": "Lukarn",
+    "posX": -21,
+    "posY": 19,
+    "clanMember": null
+  },
+  {
+    "nickname": "AstaVeng",
+    "posX": 5,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ilphryn",
+    "posX": 16,
+    "posY": 24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Tchao",
+    "posX": -29,
+    "posY": -6,
+    "clanMember": null
+  },
+  {
+    "nickname": "Test123",
+    "posX": 24,
+    "posY": -15,
+    "clanMember": null
+  },
+  {
+    "nickname": "ABCDEF",
+    "posX": -8,
+    "posY": 27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Keyser Soze",
+    "posX": -16,
+    "posY": 10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mahiehie",
+    "posX": -10,
+    "posY": -25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Raiden",
+    "posX": 27,
+    "posY": 11,
+    "clanMember": null
+  },
+  {
+    "nickname": "Tenzii",
+    "posX": -28,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "BetaTesteur",
+    "posX": 14,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Gavroche",
+    "posX": 13,
+    "posY": -11,
+    "clanMember": null
+  },
+  {
+    "nickname": "Shabani",
+    "posX": 6,
+    "posY": 27,
+    "clanMember": null
+  },
+  {
+    "nickname": "HamoudBoualrm",
+    "posX": -25,
+    "posY": -15,
+    "clanMember": null
+  },
+  {
+    "nickname": "Egg",
+    "posX": 30,
+    "posY": -4,
+    "clanMember": null
+  },
+  {
+    "nickname": "Egg2",
+    "posX": -17,
+    "posY": 23,
+    "clanMember": null
+  },
+  {
+    "nickname": "Loufuck",
+    "posX": -3,
+    "posY": -28,
+    "clanMember": null
+  },
+  {
+    "nickname": "Gkr",
+    "posX": 20,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "Souk",
+    "posX": -30,
+    "posY": -1,
+    "clanMember": null
+  },
+  {
+    "nickname": "old drix",
+    "posX": 22,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Portgas-D-Ace",
+    "posX": -2,
+    "posY": 29,
+    "clanMember": null
+  },
+  {
+    "nickname": "Red",
+    "posX": -16,
+    "posY": -25,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ydron-la-pute",
+    "posX": 28,
+    "posY": 7,
+    "clanMember": null
+  },
+  {
+    "nickname": "TheDeathx",
+    "posX": -25,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Itu ohm",
+    "posX": 13,
+    "posY": -16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Tipou",
+    "posX": 10,
+    "posY": -29,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sefyoumolotov",
+    "posX": 13,
+    "posY": 28,
+    "clanMember": null
+  },
+  {
+    "nickname": "Dobby",
+    "posX": -16,
+    "posY": -4,
+    "clanMember": null
+  },
+  {
+    "nickname": "Nacimblchmma ",
+    "posX": -29,
+    "posY": -10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Lady Saber",
+    "posX": -13,
+    "posY": 0,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Sasuke",
+    "posX": 27,
+    "posY": -12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Itachi",
+    "posX": -14,
+    "posY": 28,
+    "clanMember": null
+  },
+  {
+    "nickname": "Narutokun",
+    "posX": -7,
+    "posY": -29,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sakura",
+    "posX": 25,
+    "posY": 15,
+    "clanMember": null
+  },
+  {
+    "nickname": "pett",
+    "posX": -31,
+    "posY": 7,
+    "clanMember": null
+  },
+  {
+    "nickname": "Biggie",
+    "posX": 17,
+    "posY": -23,
+    "clanMember": null
+  },
+  {
+    "nickname": "Snup",
+    "posX": 4,
+    "posY": 31,
+    "clanMember": null
+  },
+  {
+    "nickname": "Long John Silver",
+    "posX": 9,
+    "posY": 9,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "CafarTueur",
+    "posX": -23,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ninjago",
+    "posX": 32,
+    "posY": 0,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kaio",
+    "posX": -23,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "HunterZeno",
+    "posX": 1,
+    "posY": -32,
+    "clanMember": null
+  },
+  {
+    "nickname": "Koss",
+    "posX": 18,
+    "posY": 24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Chibrax",
+    "posX": -31,
+    "posY": -5,
+    "clanMember": null
+  },
+  {
+    "nickname": "Arich",
+    "posX": 27,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "LaStreet94",
+    "posX": -7,
+    "posY": 30,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kangoutrou",
+    "posX": -15,
+    "posY": -26,
+    "clanMember": null
+  },
+  {
+    "nickname": "Dopy",
+    "posX": 30,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Littlecapone",
+    "posX": -29,
+    "posY": 12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ewasme",
+    "posX": 13,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kanki",
+    "posX": 10,
+    "posY": 29,
+    "clanMember": null
+  },
+  {
+    "nickname": "w_wass94",
+    "posX": 17,
+    "posY": -8,
+    "clanMember": null
+  },
+  {
+    "nickname": "Stf213",
+    "posX": -28,
+    "posY": -16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ninjaaa",
+    "posX": 31,
+    "posY": -8,
+    "clanMember": null
+  },
+  {
+    "nickname": "TURBO",
+    "posX": -14,
+    "posY": -12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Requ1",
+    "posX": 5,
+    "posY": 12,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Teach",
+    "posX": -17,
+    "posY": 27,
+    "clanMember": null
+  },
+  {
+    "nickname": "hjvjv",
+    "posX": -3,
+    "posY": -32,
+    "clanMember": null
+  },
+  {
+    "nickname": "Aldris",
+    "posX": 24,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ditrix",
+    "posX": -32,
+    "posY": 2,
+    "clanMember": null
+  },
+  {
+    "nickname": "yubo",
+    "posX": 22,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Toinou",
+    "posX": -1,
+    "posY": 33,
+    "clanMember": null
+  },
+  {
+    "nickname": "Livai",
+    "posX": -16,
+    "posY": 6,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Shin",
+    "posX": -20,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sir Tajima",
+    "posX": -9,
+    "posY": 4,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "brah",
+    "posX": 32,
+    "posY": 3,
+    "clanMember": null
+  },
+  {
+    "nickname": "plooo",
+    "posX": -26,
+    "posY": 20,
+    "clanMember": null
+  },
+  {
+    "nickname": "ksdj",
+    "posX": 6,
+    "posY": -30,
+    "clanMember": null
+  },
+  {
+    "nickname": "Tayki",
+    "posX": -10,
+    "posY": 4,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Epstein",
+    "posX": 17,
+    "posY": 27,
+    "clanMember": null
+  },
+  {
+    "nickname": "Shinra",
+    "posX": -11,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Zoropachi",
+    "posX": -31,
+    "posY": -9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Swity",
+    "posX": 0,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Dense",
+    "posX": 28,
+    "posY": -14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Zaraki Kenpachi",
+    "posX": -18,
+    "posY": -9,
+    "clanMember": null
+  },
+  {
+    "nickname": "EdwardMinaro",
+    "posX": -11,
+    "posY": 31,
+    "clanMember": null
+  },
+  {
+    "nickname": "Galac",
+    "posX": -12,
+    "posY": -30,
+    "clanMember": null
+  },
+  {
+    "nickname": "Yujiro",
+    "posX": 30,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "TaLi",
+    "posX": -31,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Frigo M",
+    "posX": 13,
+    "posY": 14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Nico Robin",
+    "posX": 12,
+    "posY": 2,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "PeterPan",
+    "posX": 16,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "jovivi",
+    "posX": 6,
+    "posY": 33,
+    "clanMember": null
+  },
+  {
+    "nickname": "Miou",
+    "posX": -25,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Testuto",
+    "posX": 34,
+    "posY": -3,
+    "clanMember": null
+  },
+  {
+    "nickname": "testutopirate",
+    "posX": -22,
+    "posY": 24,
+    "clanMember": null
+  },
+  {
+    "nickname": "Cerberos",
+    "posX": 7,
+    "posY": -1,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Scorp",
+    "posX": -5,
+    "posY": 5,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Drix",
+    "posX": 0,
+    "posY": 2,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "Sir Gros Bzez",
+    "posX": -5,
+    "posY": -4,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Hayashi",
+    "posX": 0,
+    "posY": -34,
+    "clanMember": null
+  },
+  {
+    "nickname": "Calmar",
+    "posX": 19,
+    "posY": 0,
+    "clanMember": null
+  },
+  {
+    "nickname": "Herosif",
+    "posX": 22,
+    "posY": 23,
+    "clanMember": null
+  },
+  {
+    "nickname": "Szeth",
+    "posX": -6,
+    "posY": 3,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Elenya",
+    "posX": -33,
+    "posY": -2,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mouti",
+    "posX": 6,
+    "posY": 5,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Ballasuda",
+    "posX": 27,
+    "posY": -21,
+    "clanMember": null
+  },
+  {
+    "nickname": "testfiuo",
+    "posX": 20,
+    "posY": -6,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ghost Dog",
+    "posX": -5,
+    "posY": -1,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "AHhh",
+    "posX": -18,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "PainAuChocolat",
+    "posX": 3,
+    "posY": -1,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Kaminari",
+    "posX": -8,
+    "posY": -7,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "Shin Kurogami",
+    "posX": 14,
+    "posY": 7,
+    "clanMember": null
+  },
+  {
+    "nickname": "Luffysan",
+    "posX": 31,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ei Sei",
+    "posX": -6,
+    "posY": -6,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Ludo Sempai",
+    "posX": -1,
+    "posY": -8,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Esprit Vorpal",
+    "posX": -19,
+    "posY": -2,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ryu Min",
+    "posX": -14,
+    "posY": -8,
+    "clanMember": null
+  },
+  {
+    "nickname": "Pseudo",
+    "posX": 17,
+    "posY": 3,
+    "clanMember": null
+  },
+  {
+    "nickname": "PierreLePirate",
+    "posX": 7,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Deltacesium",
+    "posX": -1,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "darksnipeur",
+    "posX": -4,
+    "posY": 9,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Achille",
+    "posX": -18,
+    "posY": -5,
+    "clanMember": null
+  },
+  {
+    "nickname": "McFly",
+    "posX": 1,
+    "posY": -2,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "White",
+    "posX": 9,
+    "posY": -7,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Jiraya",
+    "posX": -2,
+    "posY": 17,
+    "clanMember": null
+  },
+  {
+    "nickname": "Alioch4",
+    "posX": -13,
+    "posY": 5,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "Zephyr",
+    "posX": -30,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "LostIay",
+    "posX": -1,
+    "posY": 11,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Garm",
+    "posX": -6,
+    "posY": 11,
+    "clanMember": null
+  },
+  {
+    "nickname": "JohnPatate",
+    "posX": -6,
+    "posY": -32,
+    "clanMember": null
+  },
+  {
+    "nickname": "swax",
+    "posX": 5,
+    "posY": -7,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Bob",
+    "posX": 13,
+    "posY": 7,
+    "clanMember": null
+  },
+  {
+    "nickname": "Jopop",
+    "posX": 6,
+    "posY": -8,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "Renardo",
+    "posX": 11,
+    "posY": 6,
+    "clanMember": {
+      "clan": {
+        "id": 12,
+        "name": "Yawata no kami"
+      }
+    }
+  },
+  {
+    "nickname": "Fonzy",
+    "posX": -22,
+    "posY": -5,
+    "clanMember": null
+  },
+  {
+    "nickname": "FBilson",
+    "posX": -6,
+    "posY": -11,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "Sauron",
+    "posX": -12,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "mangamoins",
+    "posX": 29,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Renato",
+    "posX": -34,
+    "posY": 6,
+    "clanMember": null
+  },
+  {
+    "nickname": "asval",
+    "posX": 23,
+    "posY": -27,
+    "clanMember": null
+  },
+  {
+    "nickname": "FAlVER",
+    "posX": 20,
+    "posY": -11,
+    "clanMember": null
+  },
+  {
+    "nickname": "Girly",
+    "posX": 0,
+    "posY": 10,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Chteuf",
+    "posX": -13,
+    "posY": 13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Wilberforce",
+    "posX": 15,
+    "posY": -11,
+    "clanMember": null
+  },
+  {
+    "nickname": "Garen",
+    "posX": -4,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Jim",
+    "posX": -7,
+    "posY": -14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Peeeff",
+    "posX": -9,
+    "posY": 20,
+    "clanMember": null
+  },
+  {
+    "nickname": "Rewis",
+    "posX": 3,
+    "posY": 33,
+    "clanMember": null
+  },
+  {
+    "nickname": "Charly",
+    "posX": -25,
+    "posY": -24,
+    "clanMember": null
+  },
+  {
+    "nickname": "guigz",
+    "posX": -9,
+    "posY": -21,
+    "clanMember": null
+  },
+  {
+    "nickname": "nnyawak",
+    "posX": 10,
+    "posY": -32,
+    "clanMember": null
+  },
+  {
+    "nickname": "camalo",
+    "posX": 21,
+    "posY": 8,
+    "clanMember": null
+  },
+  {
+    "nickname": "KiMi_iZuKi",
+    "posX": 11,
+    "posY": 0,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Sonanta",
+    "posX": 34,
+    "posY": 0,
+    "clanMember": null
+  },
+  {
+    "nickname": "Dramak",
+    "posX": -1,
+    "posY": 22,
+    "clanMember": null
+  },
+  {
+    "nickname": "iXALIIR",
+    "posX": -22,
+    "posY": 6,
+    "clanMember": null
+  },
+  {
+    "nickname": "ErieMagpie",
+    "posX": -8,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kadir5761",
+    "posX": -13,
+    "posY": -16,
+    "clanMember": null
+  },
+  {
+    "nickname": "eworioz",
+    "posX": -17,
+    "posY": 12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sayn",
+    "posX": -25,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "ChouchouDesNanas",
+    "posX": 3,
+    "posY": -34,
+    "clanMember": null
+  },
+  {
+    "nickname": "yuzumii",
+    "posX": 12,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ulkirions",
+    "posX": 6,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "Sir Unk",
+    "posX": 13,
+    "posY": -3,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Koloo",
+    "posX": 12,
+    "posY": -14,
+    "clanMember": null
+  },
+  {
+    "nickname": "senko",
+    "posX": 4,
+    "posY": 22,
+    "clanMember": null
+  },
+  {
+    "nickname": "Monsterone",
+    "posX": 12,
+    "posY": 32,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mamsk",
+    "posX": -19,
+    "posY": -14,
+    "clanMember": null
+  },
+  {
+    "nickname": "elreydeint",
+    "posX": 19,
+    "posY": 29,
+    "clanMember": null
+  },
+  {
+    "nickname": "BaBaygo",
+    "posX": -31,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Nalde",
+    "posX": 14,
+    "posY": -7,
+    "clanMember": {
+      "clan": {
+        "id": 10,
+        "name": "𝔚𝔥𝔦𝔱𝔢 ℭ𝔥𝔢𝔳𝔞𝔩𝔢𝔯𝔦𝔢"
+      }
+    }
+  },
+  {
+    "nickname": "Dreamerz",
+    "posX": -16,
+    "posY": 0,
+    "clanMember": null
+  },
+  {
+    "nickname": "Xebec",
+    "posX": -34,
+    "posY": -6,
+    "clanMember": null
+  },
+  {
+    "nickname": "TaTassX",
+    "posX": 31,
+    "posY": -11,
+    "clanMember": null
+  },
+  {
+    "nickname": "Feroh",
+    "posX": -20,
+    "posY": 2,
+    "clanMember": null
+  },
+  {
+    "nickname": "Skykyls",
+    "posX": -3,
+    "posY": 19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Purps",
+    "posX": -17,
+    "posY": 8,
+    "clanMember": null
+  },
+  {
+    "nickname": "Youssef",
+    "posX": 29,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "rapco",
+    "posX": -11,
+    "posY": 34,
+    "clanMember": null
+  },
+  {
+    "nickname": "Epstein Island",
+    "posX": -10,
+    "posY": -17,
+    "clanMember": null
+  },
+  {
+    "nickname": "patman",
+    "posX": 13,
+    "posY": 12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kzzn",
+    "posX": -18,
+    "posY": 30,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ro55y",
+    "posX": -11,
+    "posY": 12,
+    "clanMember": null
+  },
+  {
+    "nickname": "sasuke221",
+    "posX": -16,
+    "posY": -32,
+    "clanMember": null
+  },
+  {
+    "nickname": "marcelin",
+    "posX": 8,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mugi",
+    "posX": 21,
+    "posY": 1,
+    "clanMember": null
+  },
+  {
+    "nickname": "ELSA",
+    "posX": 18,
+    "posY": 6,
+    "clanMember": null
+  },
+  {
+    "nickname": "Daemon",
+    "posX": 21,
+    "posY": -2,
+    "clanMember": null
+  },
+  {
+    "nickname": "SonTapi0n",
+    "posX": 33,
+    "posY": 14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ven1",
+    "posX": 1,
+    "posY": -15,
+    "clanMember": null
+  },
+  {
+    "nickname": "Pute",
+    "posX": 3,
+    "posY": -22,
+    "clanMember": null
+  },
+  {
+    "nickname": "Jjji",
+    "posX": -33,
+    "posY": 13,
+    "clanMember": null
+  },
+  {
+    "nickname": "soso",
+    "posX": -12,
+    "posY": 17,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kenan",
+    "posX": -16,
+    "posY": 16,
+    "clanMember": null
+  },
+  {
+    "nickname": "Haha",
+    "posX": 15,
+    "posY": -30,
+    "clanMember": null
+  },
+  {
+    "nickname": "Blast",
+    "posX": -11,
+    "posY": -9,
+    "clanMember": null
+  },
+  {
+    "nickname": "Rgg66",
+    "posX": 9,
+    "posY": 34,
+    "clanMember": null
+  },
+  {
+    "nickname": "zzz",
+    "posX": -2,
+    "posY": -23,
+    "clanMember": null
+  },
+  {
+    "nickname": "Homme",
+    "posX": 12,
+    "posY": 18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Kurama",
+    "posX": -13,
+    "posY": -5,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Corurn",
+    "posX": -30,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Slyness",
+    "posX": 17,
+    "posY": 15,
+    "clanMember": null
+  },
+  {
+    "nickname": "Enoram",
+    "posX": 33,
+    "posY": -5,
+    "clanMember": null
+  },
+  {
+    "nickname": "uguguggu",
+    "posX": -22,
+    "posY": 29,
+    "clanMember": null
+  },
+  {
+    "nickname": "spyxou",
+    "posX": -21,
+    "posY": 0,
+    "clanMember": null
+  },
+  {
+    "nickname": "Helidem",
+    "posX": 16,
+    "posY": 14,
+    "clanMember": null
+  },
+  {
+    "nickname": "Omni-Man",
+    "posX": 4,
+    "posY": 17,
+    "clanMember": {
+      "clan": {
+        "id": 8,
+        "name": "Kage no Kaizoku 影の海賊"
+      }
+    }
+  },
+  {
+    "nickname": "nikeur2tante",
+    "posX": 17,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Ragnar",
+    "posX": 1,
+    "posY": -18,
+    "clanMember": null
+  },
+  {
+    "nickname": "Enor",
+    "posX": -17,
+    "posY": 4,
+    "clanMember": null
+  },
+  {
+    "nickname": "jcom",
+    "posX": -5,
+    "posY": 34,
+    "clanMember": null
+  },
+  {
+    "nickname": "Enoram7",
+    "posX": 5,
+    "posY": 8,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Arcanus",
+    "posX": 3,
+    "posY": 10,
+    "clanMember": null
+  },
+  {
+    "nickname": "shinryuji",
+    "posX": -4,
+    "posY": -13,
+    "clanMember": null
+  },
+  {
+    "nickname": "Saizan",
+    "posX": 15,
+    "posY": 9,
+    "clanMember": null
+  },
+  {
+    "nickname": "SaidChalandon",
+    "posX": -13,
+    "posY": 3,
+    "clanMember": {
+      "clan": {
+        "id": 11,
+        "name": "Los Pollos Hermanos"
+      }
+    }
+  },
+  {
+    "nickname": "Shiinobii",
+    "posX": 10,
+    "posY": 12,
+    "clanMember": null
+  },
+  {
+    "nickname": "Lexiia",
+    "posX": 15,
+    "posY": 2,
+    "clanMember": {
+      "clan": {
+        "id": 13,
+        "name": "Shi no kitzu"
+      }
+    }
+  },
+  {
+    "nickname": "Valou",
+    "posX": -4,
+    "posY": 21,
+    "clanMember": null
+  },
+  {
+    "nickname": "CashMan",
+    "posX": -12,
+    "posY": -19,
+    "clanMember": null
+  },
+  {
+    "nickname": "Mappellepas",
+    "posX": -4,
+    "posY": -20,
+    "clanMember": null
+  },
+  {
+    "nickname": "grokk",
+    "posX": -3,
+    "posY": -34,
+    "clanMember": null
+  },
+  {
+    "nickname": "Pasteque2wish",
+    "posX": 21,
+    "posY": 5,
+    "clanMember": null
+  },
+  {
+    "nickname": "Tsukiyo",
+    "posX": -20,
+    "posY": 10,
+    "clanMember": null
+  },
+  {
+    "nickname": "Bartdouille",
+    "posX": 7,
+    "posY": -22,
+    "clanMember": null
+  }
+]
