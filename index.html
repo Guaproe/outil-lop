@@ -584,6 +584,71 @@
             .trip-block-value {
                 font-size: 1.05rem;
             }
+
+            .list-shell {
+                overflow: visible;
+                border: none;
+            }
+
+            .ranking-table,
+            .ranking-table thead,
+            .ranking-table tbody,
+            .ranking-table tr,
+            .ranking-table th,
+            .ranking-table td {
+                display: block;
+                width: 100%;
+            }
+
+            .ranking-table thead {
+                display: none;
+            }
+
+            .ranking-table {
+                background: transparent;
+            }
+
+            .ranking-table tbody {
+                display: grid;
+                gap: 0.85rem;
+            }
+
+            .ranking-table tbody tr {
+                border: 1px solid var(--border);
+                border-radius: 12px;
+                background: var(--input-bg);
+                padding: 0.35rem 0;
+                overflow: hidden;
+            }
+
+            .ranking-table td {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+                padding: 0.75rem 0.85rem;
+                text-align: right;
+            }
+
+            .ranking-table td:last-child {
+                border-bottom: none;
+            }
+
+            .ranking-table td::before {
+                content: attr(data-label);
+                float: left;
+                color: var(--text-muted);
+                font-family: 'Chakra Petch', sans-serif;
+                font-size: 0.68rem;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                margin-right: 1rem;
+            }
+
+            .ranking-table td.empty-state {
+                text-align: center;
+            }
+
+            .ranking-table td.empty-state::before {
+                content: none;
+            }
         }
 
         @media (max-width: 900px) {
@@ -1072,12 +1137,12 @@
             clanRows.forEach(member => {
                 rows.push(
                     '<tr>' +
-                    '<td class="mono">' + rank++ + '</td>' +
-                    '<td><span class="pill">' + escapeHtml(clan.name) + '</span></td>' +
-                    '<td>' + escapeHtml(member.nickname) + '</td>' +
-                    '<td class="mono">' + member.posX + '/' + member.posY + '</td>' +
-                    '<td class="mono">' + member.distanceToReference + ' km</td>' +
-                    '<td class="mono">' + escapeHtml(referencePlayer.nickname) + ' (' + referencePlayer.posX + '/' + referencePlayer.posY + ')</td>' +
+                    '<td class="mono" data-label="#">' + rank++ + '</td>' +
+                    '<td data-label="Clan"><span class="pill">' + escapeHtml(clan.name) + '</span></td>' +
+                    '<td data-label="Joueur">' + escapeHtml(member.nickname) + '</td>' +
+                    '<td class="mono" data-label="Position">' + member.posX + '/' + member.posY + '</td>' +
+                    '<td class="mono" data-label="Distance">' + member.distanceToReference + ' km</td>' +
+                    '<td class="mono" data-label="Depuis">' + escapeHtml(referencePlayer.nickname) + ' (' + referencePlayer.posX + '/' + referencePlayer.posY + ')</td>' +
                     '</tr>'
                 );
             });
