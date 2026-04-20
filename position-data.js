@@ -1068,7 +1068,7 @@ window.POSITIONS_DATA = [
     "nickname": "Swity",
     "posX": 0,
     "posY": -13,
-    "clanMember": null
+    "clanMember": "Kage no Kaizoku 影の海賊"
   },
   {
     "nickname": "Dense",
